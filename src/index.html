@@ -12,7 +12,7 @@
     <header class="header">
         <img class="header__logo" src="<%=require('../images/Logo.png')%>">
         <!-- <div class="header__container"> -->
-        <div class="menu__container">
+        <div class="menu">
             <ul class="menu__list">
                 <li><a class="menu__link" href="#composition">Композиция</a></li>
                 <li><a class="menu__link" href="#setting">Камера</a></li>
@@ -60,6 +60,7 @@
                 </ul>
         </section>
         <section class="setting" id="setting">
+            <div class="setting__container">
             <div class="setting__left-column">
                 <h3 class="setting__subtitle">Камера</h2>
                     <ul class="setting__title">
@@ -69,18 +70,19 @@
                     </ul>
                     <p class="setting__about">отзывы про часть о камерах:</p>
             </div>
-            <img class="setting__photo" src="./images/image_forest-3_x1.jpg" alt="Photo of the green dark forest." <div
-                class="review-box">
+            <img class="setting__photo" src="<%=require('../images/image_forest-3_x1.jpg')%>" alt="Photo of the green dark forest.">
+        </div>
             <div class="review">
-                <p class="review__text">на этом курсе я научился пользоватся камерой, как настоящий профессионал!</p>
-                <p class="review__autor">Питер, водитель.</p>
+            <div class="review__contaner">
+                <blockquote class="review__quote">на этом курсе я научился пользоватся камерой, как настоящий<br> профессионал!</blockquote>
+                <p class="review__author">Питер, водитель.</p>
                 <p class="review__tag">@piter123</p>
             </div>
-            <div class="review">
-                <p class="review__text">супер крутой курс!
+            <div class="review__container">
+                <blockquote class="review__quote">супер крутой курс!
                     на части про фотики
-                    я стал разбираться в предназначении кнопок/p>
-                <p class="review__autor">Джон, спортсмен.</p>
+                    я стал разбираться в предназначении кнопок</blockquote>
+                <p class="review__author">Джон, спортсмен.</p>
                 <p class="review__tag">@john_sport</p>
             </div>
             </div>
