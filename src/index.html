@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
+    <!-- <link rel="stylesheet" href="../pages/style.scss"> -->
     <title>Photo-lessons</title>
 </head>
 
 <body class="body">
     <header class="header">
-        <img class="header__logo" src="./images/Logo.png">
+        <img class="header__logo" src="<%=require('../images/Logo.png')%>">
         <!-- <div class="header__container"> -->
         <div class="menu__container">
             <ul class="menu__list">
@@ -24,13 +24,13 @@
     <main class="main">
         <section class="learn">
             <div class="learn__container">
-                <div class="learn_left-column">
+                <div class="learn__left-column">
                     <h1 class="learn__title">Курс по фотографии</h1>
                     <p class="learn__about">Фотография в природных условиях, уроки по композиции и по пользованию
                         камерой.</p>
-                    <button class="learn__button">Подробнее</button>
+                    <button class="learn__button button">Подробнее</button>
                 </div>
-                <img class="learn__photo" src="./images/image_forest-1_x1.jpg" alt="photo of the forest and snow.">
+                <img class="learn__photo" src="<%=require('../images/image_forest-1_x1.jpg')%>" alt="photo of the forest and snow.">
             </div>
         </section>
         <section class="composition" id="composition">
@@ -40,25 +40,24 @@
                     <h2 class="composition__title">Изучите композицию</h2>
                     <p class="composition__about about">Вы изучите гармоничное размещение
                         всех элементов изображения на
-                        снимке.</p>
-                    <br>
+                        <span class="composition__about_bold">снимке.</span></p>
                     <p class="composition__about about">Изучите композицию интуитивную
                         и какие-то определённые законы.</p>
-                    <button class="composition__sign">Записаться!</button>
+                    <button class="composition__button button">Записаться!</button>
                 </div>
-                <img class="composition__photo" src="./images/image_forest-2_x1.jpg" alt="Photo of the forest and road."
-                    <ul class="down">
-                <li class="down__element">Првило третей, при котором нужно распологать объекты на пересечениях.
+                <img class="composition__photo" src="<%=require('../images/image_forest-2_x1.jpg')%>" alt="Photo of the forest and road.">
+            </div>
+            <ul class="down-line">
+                <li class="down-line__element">Првило третей, при котором нужно распологать объекты на пересечениях.
                 </li>
-                <li class="down__element">Простота: убирай всё лишнее
+                <li class="down-line__element">Простота: убирай всё лишнее
                     и кадрируй!
                 </li>
-                <li class="down__element">Равновесие: уравновесь пятна объекта и фона.
+                <li class="down-line__element">Равновесие: уравновесь пятна объекта и фона.
                 </li>
-                <li class="down__element">3D глубина кадра: расположи объект позади и перед другими предметами.
+                <li class="down-line__element">3D глубина кадра: расположи объект позади и перед другими предметами.
                 </li>
                 </ul>
-            </div>
         </section>
         <section class="setting" id="setting">
             <div class="setting__left-column">
